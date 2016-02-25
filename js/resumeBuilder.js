@@ -36,6 +36,37 @@ if(bio.skills.length>0)
 
 }
 
+var projects = 
+{
+	data:[
+	{
+		"title":"First project",
+		"date" :"2015",
+		"description":"cool stuff",
+		"image":"images\\197x148.gif"
+	},
+	{
+		"title":"2nd project",
+		"date" :"2016",
+		"description":"more stuff",
+		"image":"images\\197x148.gif"
+	}],
+
+	display:function()
+	{
+		for(proj in this.data)
+		{
+			$("#projects").append(HTMLprojectStart);
+			$("#projects").append(HTMLprojectTitle.replace("%data%", this.data[proj].title));
+			$("#projects").append(HTMLprojectDates.replace("%data%", this.data[proj].date));
+			$("#projects").append(HTMLprojectDescription.replace("%data%", this.data[proj].description));
+			$("#projects").append(HTMLprojectImage.replace("%data%", this.data[proj].image));
+		};
+	}
+};
+
+projects.display();
+
 var mywork =[
 {
 	"start":"1999",
