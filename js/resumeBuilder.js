@@ -5,7 +5,7 @@ var funThoughts = awesomeThoughts.replace("awesome", "fun");
 
 console.log(awesomeThoughts);
 console.log(funThoughts);
-*/
+*/ 
 var formattedName = "John Lopez"
 var formattedRole = "Application Support"
 
